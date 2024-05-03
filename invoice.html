@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 21cm;
+            height: 29.7cm; 
+            margin: 0 auto;
+
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .logo{
+            align-self: flex-start;
+        }
+        .header-right{
+            align-self: flex-end;
+        }
+        .sub-header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .table1{
+            align-self: flex-start;
+        }
+        .table2{
+            align-self: flex-end;
+        }
+        .table-header{
+            background-color: bisque;
+            margin-top: 10px;
+           
+            
+        }
+        .table3{
+            width:21cm;
+            margin-top: 100px;
+        }
+        .item-column{
+            width: 400px;
+        }
+        .calculation{
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 100px;
+        }
+        .final-calculation{
+            font-style: normal;
+            font-size: 15px;
+            font-weight: 100;
+            padding-right:100px ;
+
+        }
+        td{
+            font-style: normal;
+            font-size: 15px;
+            font-weight: 100;
+        }
+   
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+        <div class="header-right">
+            <h3>INVOICE</h3>
+        </div>
+    </div>
+    <div class="sub-header">
+        <div class="table1">
+            <table>
+                <th>Uzosign INC</th>
+                <tr><td>Bill To</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td></td><td>Ship To</td></tr>
+                <tr><td><strong>Mr. Test</strong></td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td><strong>Mr. Test</strong></td></tr>
+            </table>
+        </div>
+        <div>
+            <table class="table2">
+                <tr><td  class="final-calculation">Date:</td><td><strong>3 May, 2024</strong></td></tr>
+                <tr><td  class="final-calculation">Payment Terms:</td><td>2</td></tr>
+                <tr><td  class="final-calculation">Due Date:</td><td>1 May,2024</td></tr>
+                <tr><td  class="final-calculation">PO Number:</td><td>187646</td></tr>
+                <tr><td  class="final-calculation"><strong>Balance Due:</strong><td>$125</td></tr>
+            </table>
+        </div>
+    </div>
+    <div>
+        <table class="table3">
+            <tr class="table-header"><td class="item-column">Item</td><td>Quantity</td><td>Rate</td><td>Ammount</td></tr>
+            <tr ><td class="item-column">Envelope</td><td>5</td><td>$25</td><td>$125</td></tr>
+        </table>
+    </div>
+    <div class="calculation">
+        <table>
+            <tr><td class="final-calculation">Subtotal:</td><td><strong>$125.00</strong></td></tr>
+            <tr><td class="final-calculation">Tax (0%):</td><td>$0.00</td></tr>
+            <tr><td class="final-calculation">Total:</td><td>$125.00</td></tr>
+        </table>
+    </div>
+</body>
+</html>
