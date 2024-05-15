@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+        input{
+            margin-top: 0px;
+            padding: 2px;
+        }
+        img{
+           border: #fff;
+        }
+       ::placeholder {
+            padding: 10px;
+            font-size: 13px;
+        }
+        select{
+            margin-top: 0px;
+        }
+         body {
+               
+                margin: 0; 
+                background-color: black;
+            } 
+        .full-body {
+            display: flex;
+        }
+        .left-block {
+            height: auto;
+            min-height: 100vh; /* Set minimum height to fill the viewport */
+            width: 50%;
+            /* background-color: #00246E;  */
+            background-color:#2c4c97;
+            color: white; /* Text color */
+        }
+        .right-block {
+            height: auto;
+            min-height: 100vh; /* Set minimum height to fill the viewport */
+            width: 50%;
+            background-color: white;
+            padding: 10px; /* Set white background */
+            
+        }
+        .left-block-content{
+            padding: 150px;
+            padding-bottom: 0px;
+            align-items: center;
+    
+
+
+        }
+        .right-block-content{
+            padding: 150px;
+            padding-bottom: 0px;
+            align-items: center;
+           
+
+
+        }
+        .card-information{
+            display: flex;
+            width: fit-content;
+           
+
+        }
+        .input-field{
+            width: 500px;
+            height:35px;
+            border-radius:5px;
+            border: 1px solid #ccc; 
+            box-shadow: 5px;
+        }
+        #sub-input-field{
+            width: 247px;
+            height:35px;
+            border: 1px solid #ccc; 
+            
+          
+        }
+        .input-select-field{
+            width: 505px;
+            height:38px;
+            border-radius:5px;
+            font-size: 13px;
+            border: 1px solid #ccc;
+        }
+     .pay-button{
+        width: 500px;
+        height: 35px;
+        border-radius: 5px;
+        border:none;
+        /* background-color:#0D76E3 ; */
+        background-color:#EE4367;
+        color: white;
+        
+     }
+     .header-text{
+        font-size: smaller;
+        font-weight: 100;
+     }
+     .leftblock{
+        display: inline;
+        
+     }
+
+     .left-block-footer-content{
+        display: flex;
+        align-items: center;
+        padding-top: 400px;
+        padding-bottom: 25px;
+     }
+     .dollar{
+        font-size: 50px;
+     }
+ 
+     @media only screen and (min-width: 250px) and (max-width: 700px) {
+        .full-body {
+            flex-direction: column;
+        }
+        .left-block{
+            width: 100%;
+        }
+        .right-block{
+            width: 100%;
+        }
+        .input-field{
+            width: 250px;
+        }
+        .card-information{
+            display: inline;
+        }
+        #sub-input-field{
+            width:250px
+        }
+        .input-select-field{
+            width:250px;
+        }
+        .pay-button{
+           width: 250px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="full-body">
+        <div class="left-block">
+            <div class="left-block-content">
+                <img src="logo.png" alt="logo">
+                <div>Product Name</div>
+                <div class="dollar">$0.00</div>
+                <div class="left-block-footer-content">
+                    <div>Powered by Stripe</div>&nbsp;|&nbsp;<div>Terms &nbsp;<span> privacy</span></div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="right-block">
+            <div class="right-block-content">
+                <h2>Pay With Card</h3>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="header-text">Email</div>
+                <input  class="input-field" placeholder="Enter your email address"   type="Email" name="" id="">
+                &nbsp;&nbsp;
+                    <div class="header-text">Card Information</div>
+                    <input placeholder="1234 1234 1234 1234" class="input-field" type="Email" name="" id="">
+                        <div class="card-information">
+                            <input placeholder="MM/YY"  id="sub-input-field" type="Email" name="">
+                            <input placeholder="CVC"  id="sub-input-field" type="Email" name="" >
+                        </div>
+                &nbsp;&nbsp;
+                <div class="header-text">Cardholder name</div>
+                <input placeholder="Full name on card" class="input-field" type="Email" name="" id="adjustment">
+                &nbsp;&nbsp; 
+            <div>
+                <div class="header-text">Country or region</div>
+                <select class="input-select-field" name="" id="">
+                    <option  class="header-text"  value="">USA</option>
+                    <option class="header-text" value="" selected>CANADA</option>
+                    <option  class="header-text" value="">AUSTRALIA</option>
+                </select><br>
+                <input placeholder="Zip" class="input-field" type="Email" name="" id="">
+            </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <div>
+                    <button class="pay-button">pay</button>
+                </div>
+                
+            </div>
+    </div>
+</body>
+</html>
